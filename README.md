@@ -1,1 +1,1 @@
-# Jaco2-CODESYS-projects
+# Jaco2-CodeSys-projects

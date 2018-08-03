@@ -6,14 +6,14 @@ Current repository includes two CodeSys projects implemented in order to be used
 
 The main idea behind each project is summed up by the following images:
 
-- `raspberry_tcp_ip.project`</br>
+### raspberry_tcp_ip.project
 A connection between the Raspberry Pi microcomputer and the PC that runs the robot simulation is established using the TCP/IP protocol, as shown below. There are two ways to establish such a connection: 
    1. Using a crossover Ethernet cable
    2. Using a patch Ethernet cable and a switch</br> 
 
 ![tcpip_idea - smaller](https://user-images.githubusercontent.com/39567867/43639191-15b12f0a-9724-11e8-8f65-8b7669e956fa.png)
 
-- `raspberry_can.project`</br>
+### raspberry_can.project
 In order to establish a CANbus connection between a Raspberry Pi and a PC, there is need for extra hardware that extends the capabilities of our hardware configuration and enables the appropriate CANbus interconnection.
    1. [PiCAN2 CANbus Board](http://skpang.co.uk/catalog/pican2-canbus-board-for-raspberry-pi-23-p-1475.html) was used from the side of Raspberry Pi to provide the CAN interface needed
    2. [PCAN-USB adapter](https://www.peak-system.com/PCAN-USB.199.0.html?&L=1) was chosen to connect the PiCAN2 hat with the PC</br>

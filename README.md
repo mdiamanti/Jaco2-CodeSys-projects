@@ -20,3 +20,18 @@ In order to establish a CANbus connection between a Raspberry Pi and a PC, there
    
 ![can_idea - smaller](https://user-images.githubusercontent.com/39567867/43639220-27745b86-9724-11e8-9461-e5636b725b92.png)
 
+Both network topologies meet the same objective. Using the following graphical user interface, they allow remote communication and control of Kinova Jaco<sup>2</sup> 6 DOF robotic arm in joint space. 
+
+![codesys_gui - smaller](https://user-images.githubusercontent.com/39567867/43643595-7415aa52-9734-11e8-8007-afcf0c1f63ef.png)
+
+The GUI above provides:
+- on/off button
+- choice between degrees or radians
+- definition of each joint's angular position through slider buttons (absolutely regarding each link's predefined coordinate system, or relatively regarding the angular position of the arm every moment)
+- movement of the arm to predefined angular positions, such as home position and candle position
+- ok and cancel buttons in order to save or cancel user's choices
+- information about the final joint angular position after the execution of a trajectory
+- information about the joint angular position error that may accur during the execution of a trajectory
+
+## CodeSys Libraries
+Each of the two projects contained in the current repository uses special libraries that provide useful functions for the development of the network's infrastructure. For the establishment of the TCP/IP connection, `CAA Net Base Services Version 3.5.12.0` library is used, which constitutes a collection of services for node communication via Ethernet. On the other side, `CAN API` library is used so as to provide the interface needed to send and receive CAN messages.
